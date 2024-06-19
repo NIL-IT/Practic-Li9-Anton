@@ -1,10 +1,8 @@
-import { useState } from "react";
-
-import StartPage from "./StartPage.jsx";
-
+import Button from "./UI/buttons/Button.jsx";
+import StartPage from "./pages/StartPage.jsx";
 function App() {
   return (
-    <div className='w-[100vw] max-w-[425px] min-h-[100%]'>
+    <div className='relative w-[100vw] max-w-[320px] min-h-[100vh]'>
       <StartPage />
     </div>
   );

@@ -1,0 +1,25 @@
+.title {
+  color: #efefef;
+  font-size: 26px;
+  line-height: 110.6%;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.card {
+  max-width: 270px;
+  background: linear-gradient(96.33deg, #264404 0.85%, #305604 49.08%, #396904 97.3%);
+  box-shadow: 0px 4px 11.9px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 10px 8px;
+}
+.text {
+  background: #191919;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110.6%;
+  color: #efefef;
+  padding: 7px 13px;
+}
