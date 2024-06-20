@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../UI/Title";
 import Card from "../assets/Card.png";
-import Button from "../UI/buttons/Button";
+import Button from "../UI/button/Button";
 
 export default function SupportPage() {
   return (

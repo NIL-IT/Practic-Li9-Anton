@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../UI/Title";
-import Button from "../UI/buttons/Button";
+import Button from "../UI/button/Button";
 import Card from "../UI/Card/Card";
 
 export default function AppointmentPage() {

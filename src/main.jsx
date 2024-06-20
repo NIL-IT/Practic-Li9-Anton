@@ -9,6 +9,7 @@ import About from "./pages/About.jsx";
 import AppointmentPage from "./pages/AppointmentPage.jsx";
 import AddressesPages from "./pages/AddressesPages.jsx";
 import FormPage from "./pages/FormPage.jsx";
+import SearchPage from "./pages/SearchPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "appointment/:cityName/form",
     element: <FormPage />,
+  },
+  {
+    path: "faq/:quest",
+    element: <SearchPage />,
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

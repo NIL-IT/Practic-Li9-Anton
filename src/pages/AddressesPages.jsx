@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Card from "../UI/Card/Card";
-import Button from "../UI/buttons/Button";
+import Button from "../UI/button/Button";
 import Title from "../UI/Title";
 
 export default function AddressesPages() {
@@ -48,18 +48,20 @@ export default function AddressesPages() {
         Запись на обслуживание в городе{" "}
         {cityName === "moscow" ? "Москва" : cityName === "nsk" ? "Новосибирск" : "Санкт-Петербург"}
       </Title>
-      {services[cityName].map((i, k) => {
-        return (
-          <Card
-            onclick={() => handleNavigate(i.name)}
-            className='mb-5'
-            title={i.name}
-            text={i.description}
-            address={i.address}
-            key={k}
-          />
-        );
-      })}
+      <div className='mb-11'>
+        {services[cityName].map((i, k) => {
+          return (
+            <Card
+              onclick={() => handleNavigate(i.name)}
+              className='mb-5'
+              title={i.name}
+              text={i.description}
+              address={i.address}
+              key={k}
+            />
+          );
+        })}
+      </div>
       <Button back>вернуться</Button>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../UI/buttons/Button";
+import Button from "../UI/button/Button";
 import Logo from "../assets/logo.svg";
 export default function StartPage() {
   return (

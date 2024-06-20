@@ -1,4 +1,3 @@
-import Button from "./UI/buttons/Button.jsx";
 import StartPage from "./pages/StartPage.jsx";
 function App() {
   return (
