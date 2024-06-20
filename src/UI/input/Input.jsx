@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Input.module.css";
 import MaskedInput from "react-text-mask";
-export default function Input({ label, type, search, subInf }) {
+export default function Input({ label, type, search, subInf, value, onChange }) {
   return (
     <div className={classes.main}>
       {!search ? (
@@ -34,6 +34,8 @@ export default function Input({ label, type, search, subInf }) {
           <input
             className={classes.search}
             type={type}
+            value={value}
+            onChange={onChange}
           />
         </div>
       ) : (
