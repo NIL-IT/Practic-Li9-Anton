@@ -13,7 +13,7 @@ export default function SearchPage() {
     setProblems(jsonData[keys]);
   }, []);
   const filteredQuestions = problems
-    ? problems.filter((question) => question.buttonname.toLowerCase().includes(searchText.toLowerCase()))
+    ? problems.filter((question) => question.buttonName.toLowerCase().includes(searchText.toLowerCase()))
     : [];
   return (
     <div className='relative flex items-center flex-col w-[100vw] max-w-[320px] min-h-[100vh]'>
@@ -32,7 +32,7 @@ export default function SearchPage() {
                 <Button
                   key={index}
                   className='h-[54px] text-[14px] text-[#D9D9D9] mb-6 px-4'>
-                  {question.buttonname}
+                  {question.buttonName}
                 </Button>
               );
             })
