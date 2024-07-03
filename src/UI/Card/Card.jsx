@@ -1,15 +1,16 @@
-import React from "react";
-import classes from "./Card.module.css";
-import { Link } from "react-router-dom";
 export default function Card({ title, text, address, className, onclick }) {
   return (
     <div
       onClick={onclick}
-      className={`${classes.card} ${className}`}>
-      <div className={classes.title}>{title}</div>
-      <div className={classes.text}>
-        {text}
-        <p>📍{address}</p>
+      className={`max-w-[270px] rounded-2xl py-3 px-3 cursor-pointer font-bold ${className}`}
+      style={{
+        background: "linear-gradient(96.33deg, #264404 0.85%, #305604 49.08%, #396904 97.3%)",
+        boxShadow: "box-shadow: 0px 4px 11.9px rgba(0, 0, 0, 0.25)",
+      }}>
+      <div className={`text-[#efefef] text-xl pb-3 text-wrap`}>{title}</div>
+      <div className={`bg-[#191919] rounded-2xl   text-[#efefef] py-2 px-3 `}>
+        <div className='font-normal text-[14px] leading-[15px]'>{text}</div>
+        <div className='pt-3 font-medium text-[16px] leading-[18px]'>📍{address}</div>
       </div>
     </div>
   );

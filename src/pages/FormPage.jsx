@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Button from "../UI/button/Button";
 import Title from "../UI/Title";
 import { useLocation, useParams } from "react-router-dom";
@@ -75,7 +75,7 @@ export default function FormPage() {
           </div>
           <Button
             type='submit'
-            className='w-[145px] h-[36px] text-[16px]'>
+            form>
             Отправить
           </Button>
         </form>

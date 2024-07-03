@@ -1,10 +1,10 @@
-import React from "react";
 import Button from "../UI/button/Button";
 import Logo from "../assets/logo.svg";
 export default function StartPage() {
   return (
     <div className='relative pt-11 flex flex-col place-items-center w-[100vw] max-w-[320px] min-h-[100vh]'>
       <Button
+        big
         link={"appointment"}
         className='mb-5'>
         Запись на обслуживание
@@ -22,7 +22,11 @@ export default function StartPage() {
           О нас 🚀
         </Button>
       </div>
-      <Button link='faq'>FAQ</Button>
+      <Button
+        link='faq'
+        big>
+        FAQ
+      </Button>
       <img
         className='mt-16 mb-11 pl-4'
         src={Logo}

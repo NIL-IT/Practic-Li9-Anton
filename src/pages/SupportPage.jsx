@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "../UI/Title";
 import Card from "../assets/Card.svg";
 import Button from "../UI/button/Button";
