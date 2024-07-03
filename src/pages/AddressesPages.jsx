@@ -46,7 +46,6 @@ export default function AddressesPages() {
   });
 
   const services = data.filter((t) => t.town.toLowerCase() === cityName.toLowerCase());
-  console.log(services);
 
   const handleNavigate = (serviceName) => {
     navigate("form", { state: { serviceName } });

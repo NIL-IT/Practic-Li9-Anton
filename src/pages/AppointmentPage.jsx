@@ -8,7 +8,7 @@ export default function AppointmentPage() {
   useEffect(() => {
     setData(jsonData.services);
   });
-  console.log(data);
+
   return (
     <div className='relative flex flex-col place-items-center w-[100vw] max-w-[320px] min-h-[100vh]'>
       <Title className='mb-7'>Запись на обслуживание</Title>
