@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import Title from "../UI/Title";
 import Button from "../UI/button/Button";
-import jsonData from "../assets/output.json";
-//{ jsonData }
-export default function AppointmentPage() {
+
+export default function AppointmentPage({ jsonData }) {
   const [data, setData] = useState([]);
   useEffect(() => {
     const uniqueTowns = [...new Set(jsonData.services.map((service) => service.town))];

@@ -3,8 +3,8 @@ import Button from "../UI/button/Button";
 import { useParams } from "react-router-dom";
 import Title from "../UI/Title";
 import Input from "../UI/input/Input";
-import jsonData from "../assets/output.json";
-export default function SearchPage() {
+
+export default function SearchPage({ jsonData }) {
   const { quest } = useParams();
   const [searchText, setSearchText] = useState("");
   const [problems, setProblems] = useState([]);

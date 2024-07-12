@@ -61,7 +61,7 @@ function App() {
         />
         <Route
           path={"faq/:quest"}
-          element={<SearchPage />}
+          element={<SearchPage jsonData={data} />}
         />
       </Routes>
     </div>
