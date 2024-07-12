@@ -53,7 +53,7 @@ function App() {
         />
         <Route
           path='appointment/:cityName'
-          element={<AddressesPages />}
+          element={<AddressesPages jsonData={data} />}
         />
         <Route
           path={"appointment/:cityName/form"}

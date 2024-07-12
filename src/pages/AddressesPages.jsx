@@ -12,7 +12,6 @@ export default function AddressesPages({ jsonData }) {
   useEffect(() => {
     setData(jsonData.services);
   });
-
   const services = data.filter((t) => t.town.toLowerCase() === cityName.toLowerCase());
 
   const handleNavigate = (serviceName) => {
