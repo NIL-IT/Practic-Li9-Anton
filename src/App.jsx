@@ -27,7 +27,6 @@ function App() {
         console.log(error);
       });
   }, []);
-  console.log(data);
   return (
     <div className='relative w-[100vw] max-w-[320px] min-h-[100vh]'>
       <Routes>
