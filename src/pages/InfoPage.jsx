@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Title from "../UI/Title";
 import Button from "../UI/button/Button";
-// import jsonData from "../assets/output.json";
 
 export default function InfoPage({ jsonData }) {
   const [data, setData] = useState([]);
@@ -29,25 +28,4 @@ export default function InfoPage({ jsonData }) {
       <Button back>вернуться</Button>
     </div>
   );
-}
-
-{
-  /* <Button
-          link={"info"}
-          className='text-[20px]'>
-          FAQ СЕРВИС/ИНФОРМАЦИЯ О МАШИНЕ
-        </Button>
-        <div className='flex mt-5'>
-          <Button
-            link={"software"}
-            mini
-            className='mr-5'>
-            FAQ ПО
-          </Button>
-          <Button
-            link={"xd"}
-            mini>
-            FAQ MA, eSender, WeChat
-          </Button>
-        </div> */
 }

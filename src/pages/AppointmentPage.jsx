@@ -30,10 +30,3 @@ export default function AppointmentPage() {
     </div>
   );
 }
-{
-  /* <Button
-  link='moscow'
-  className='mb-5'>
-  Москва
-</Button>; */
-}
