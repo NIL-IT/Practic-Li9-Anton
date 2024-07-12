@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Title from "../UI/Title";
 import Button from "../UI/button/Button";
-import jsonData from "../assets/output.json";
+// import jsonData from "../assets/output.json";
 
-export default function InfoPage() {
+export default function InfoPage({ jsonData }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {

@@ -3,8 +3,9 @@ import { useNavigate, useParams } from "react-router-dom";
 import Card from "../UI/Card/Card";
 import Button from "../UI/button/Button";
 import Title from "../UI/Title";
-import jsonData from "../assets/output.json";
-export default function AddressesPages() {
+//import jsonData from "../assets/output.json";
+
+export default function AddressesPages({ jsonData }) {
   const { cityName } = useParams();
   const navigate = useNavigate();
   // const services = {

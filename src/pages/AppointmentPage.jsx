@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import Title from "../UI/Title";
 import Button from "../UI/button/Button";
 import jsonData from "../assets/output.json";
-
+//{ jsonData }
 export default function AppointmentPage() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    setData(jsonData.services);
-  });
+    const uniqueTowns = [...new Set(jsonData.services.map((service) => service.town))];
+    setData(uniqueTowns);
+  }, []);
 
   return (
     <div className='relative flex flex-col place-items-center w-[100vw] max-w-[320px] min-h-[100vh]'>
@@ -19,9 +20,9 @@ export default function AppointmentPage() {
             return (
               <Button
                 big
-                link={item.town}
+                link={item}
                 className='mb-5'>
-                {item.town}
+                {item}
               </Button>
             );
           })}
