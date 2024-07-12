@@ -2,7 +2,7 @@ export default function Card({ title, text, address, className, onclick }) {
   return (
     <div
       onClick={onclick}
-      className={`max-w-[270px] rounded-2xl py-3 px-3 cursor-pointer font-bold ${className}`}
+      className={`max-w-[270px] w-full rounded-2xl py-3 px-3 cursor-pointer font-bold ${className}`}
       style={{
         background: "linear-gradient(96.33deg, #264404 0.85%, #305604 49.08%, #396904 97.3%)",
         boxShadow: "box-shadow: 0px 4px 11.9px rgba(0, 0, 0, 0.25)",
