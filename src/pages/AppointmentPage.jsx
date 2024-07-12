@@ -15,9 +15,10 @@ export default function AppointmentPage({ jsonData }) {
       <Button back>вернуться</Button>
       <>
         {data.length > 0 &&
-          data.map((item) => {
+          data.map((item, k) => {
             return (
               <Button
+                key={k}
                 big
                 link={item}
                 className='mb-5'>
