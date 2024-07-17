@@ -10,7 +10,7 @@ export default function AddressesPages({ jsonData }) {
 
   useEffect(() => {
     const filteredServices = jsonData.services.filter(
-      (service) => service.town.toLowerCase() === cityName.toLowerCase(),
+      (service) => service.town.toLowerCase().trim() === cityName.toLowerCase().trim(),
     );
     setServices(filteredServices);
   }, [cityName, jsonData.services]);
