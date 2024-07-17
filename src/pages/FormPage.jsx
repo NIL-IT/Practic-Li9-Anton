@@ -36,8 +36,7 @@ export default function FormPage() {
   return (
     <div className='relative flex flex-col place-items-center w-[100vw] max-w-[320px] min-h-[100vh]'>
       <Title className='mb-12'>
-        Запись на обслуживание в городе{" "}
-        {cityName === "moscow" ? "Москва" : cityName === "nsk" ? "Новосибирск" : "Санкт-Петербург"} в {serviceName}
+        Запись на обслуживание в городе {cityName} в {serviceName}
       </Title>
 
       {isFilled ? (
