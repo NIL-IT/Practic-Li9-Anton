@@ -29,11 +29,16 @@ export default function SearchPage({ jsonData }) {
         {filteredQuestions.length > 0
           ? filteredQuestions.map((question, index) => {
               return (
-                <Button
+                <a
+                  href={question.url}
                   key={index}
-                  className='h-[54px] text-[14px] text-[#D9D9D9] mb-6 px-4'>
+                  className='h-[54px] text-[14px] text-[#D9D9D9] mb-6 px-4 flex justify-center items-center font-bold  rounded-2xl text-center py-[10px]  w-[270px] min-h-[90px] '
+                  style={{
+                    background: "linear-gradient(96.33deg, #264404 0.85%, #305604 49.08%, #396904 97.3%)",
+                    boxShadow: "0px 4px 11.9px rgba(0, 0, 0, 0.25)",
+                  }}>
                   {question.buttonName}
-                </Button>
+                </a>
               );
             })
           : "Ничего не нашли"}
