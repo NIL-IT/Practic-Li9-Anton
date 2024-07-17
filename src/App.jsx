@@ -12,20 +12,23 @@ import { useEffect, useState } from "react";
 function App() {
   const [data, setData] = useState(null);
 
+  const fetchData = async () => {
+    try {
+      const response = await fetch("https://testingnil1.ru/assets/output.json");
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const jsonData = await response.json();
+      setData(jsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
   useEffect(() => {
-    fetch("https://testingnil1.ru/assets/output.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    fetchData();
+    const intervalId = setInterval(fetchData, 60000);
+    return () => clearInterval(intervalId);
   }, []);
   return (
     <div className='relative w-[100vw] max-w-[320px] min-h-[100vh]'>
