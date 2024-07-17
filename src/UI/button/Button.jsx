@@ -27,7 +27,7 @@ export default function Button({ children, mini, back, className, link, onclick,
         mini
           ? "w-[124px] text-[16px] "
           : back
-          ? "h-[38px] w-[124px] absolute bottom-0 right-[22px] pl-4 shadow-none bg-[#191919]"
+          ? "h-[38px] w-[124px] fixed bottom-[5px] right-[22px] pl-4 shadow-none bg-[#191919]"
           : form
           ? "w-[145px] h-[36px] text-[16px]"
           : "w-[270px] min-h-[90px] h-full"
@@ -38,7 +38,7 @@ export default function Button({ children, mini, back, className, link, onclick,
       }}>
       {back && (
         <svg
-          className='absolute left-[0px] top-[12px]'
+          className='absolute left-[10px] top-[12px]'
           width='9'
           height='15'
           viewBox='0 0 9 15'
