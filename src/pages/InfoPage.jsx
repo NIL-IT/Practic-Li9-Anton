@@ -25,7 +25,7 @@ export default function InfoPage({ jsonData }) {
           </div>
         ))}
       </div>
-      <Button back>вернуться</Button>
+      <Button back></Button>
     </div>
   );
 }

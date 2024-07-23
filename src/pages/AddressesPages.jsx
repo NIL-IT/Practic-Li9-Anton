@@ -33,7 +33,7 @@ export default function AddressesPages({ jsonData }) {
           key={i}
         />
       ))}
-      <Button back>вернуться</Button>
+      <Button back></Button>
     </div>
   );
 }

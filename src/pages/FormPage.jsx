@@ -82,9 +82,7 @@ export default function FormPage() {
 
       <Button
         back
-        home={isFilled}>
-        вернуться
-      </Button>
+        home={isFilled}></Button>
     </div>
   );
 }

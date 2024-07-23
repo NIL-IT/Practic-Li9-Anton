@@ -17,7 +17,7 @@ export default function About() {
         <Button className='h-[42px] text-[16px] text-[#D9D9D9] mb-5'>Наш чат 💬</Button>
         <Button className='h-[42px] text-[16px] text-[#D9D9D9]'>Задать вопрос❓</Button>
       </div>
-      <Button back>вернуться</Button>
+      <Button back></Button>
     </div>
   );
 }

@@ -44,7 +44,7 @@ export default function SearchPage({ jsonData }) {
           : "Ничего не нашли"}
       </div>
 
-      <Button back>вернуться</Button>
+      <Button back></Button>
     </div>
   );
 }

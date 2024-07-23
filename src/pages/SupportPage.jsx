@@ -22,7 +22,7 @@ export default function SupportPage() {
         className='h-[42px] text-[16px] mt-10'>
         Скопировать 🔗
       </Button>
-      <Button back>вернуться</Button>
+      <Button back></Button>
     </div>
   );
 }
