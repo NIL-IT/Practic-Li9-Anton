@@ -14,8 +14,24 @@ export default function About() {
         />
       </div>
       <div className='mb-[70px]'>
-        <Button className='h-[42px] text-[16px] text-[#D9D9D9] mb-5'>Наш чат 💬</Button>
-        <Button className='h-[42px] text-[16px] text-[#D9D9D9]'>Задать вопрос❓</Button>
+        <a
+          href=''
+          className={`flex justify-center items-center font-bold  rounded-2xl text-center py-[10px] mb-5 h-[42px] w-[270px]`}
+          style={{
+            background: `linear-gradient(96.33deg, #264404 0.85%, #305604 49.08%, #396904 97.3%)`,
+            boxShadow: "0px 4px 11.9px rgba(0, 0, 0, 0.25)",
+          }}>
+          Наш чат 💬
+        </a>
+        <a
+          href=''
+          className={`flex justify-center items-center font-bold  rounded-2xl text-center py-[10px] mb-5 h-[42px] `}
+          style={{
+            background: `linear-gradient(96.33deg, #264404 0.85%, #305604 49.08%, #396904 97.3%)`,
+            boxShadow: "0px 4px 11.9px rgba(0, 0, 0, 0.25)",
+          }}>
+          Задать вопрос❓
+        </a>
       </div>
       <Button back></Button>
     </div>
